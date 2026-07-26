@@ -23,11 +23,11 @@ const services = [
     icon: Wrench,
     title: 'LBC Auto — Shop Management',
     category: 'lbc-auto',
-    description: 'Full auto shop management software — repair orders, estimates, invoices, customer portal & AI diagnostics. Built for modern repair shops.',
+    description: 'LBC Auto is the live flagship platform by LBC Network Inc. for repair orders, estimates, invoices, customer portals, AI diagnostics, AI scanner workflows, and shop operations.',
     gradient: 'from-teal-500 to-teal-600',
     bg: 'bg-teal-500/10',
     border: 'border-teal-500/20',
-    price: 'From $200/mo',
+    price: '$199/mo Basic · $299/mo Pro',
     externalLink: 'https://lbchub.tech',
     badge: 'LIVE',
     learnMoreColor: '#14b8a6'
@@ -290,11 +290,14 @@ export default function Services() {
               Live — Our Flagship Platform
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">LBC Auto</h2>
-            <p className="text-zinc-300 text-lg mb-4 max-w-xl">
-              Full auto shop management — repair orders, estimates, invoices, AI diagnostics, and customer portals. Built for modern repair shops.
-            </p>
+            <div className="space-y-3 text-zinc-300 text-base md:text-lg mb-5 max-w-2xl">
+              <p>LBC Auto is the live flagship platform by LBC Network Inc. for modern auto repair shops.</p>
+              <p>It connects repair orders, estimates, invoices, appointments, customer portals, AI diagnostics, AI scanner workflows, and shop operations from one professional dashboard.</p>
+              <p>Customers can access repair status, invoices, estimates, messages, and diagnostic reports through LBC Hub using their phone number on file and their passcode.</p>
+              <p className="font-semibold text-white">Official access point: <a href="https://LBC-HUB.COM" className="text-teal-300 hover:text-teal-200">https://LBC-HUB.COM</a></p>
+            </div>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start mb-5">
-              {['Repair Orders', 'AI Diagnostics', 'Customer Portal', 'Invoicing', 'Appointments'].map(f => (
+              {['Repair Orders', 'AI Diagnostics', 'AI Scanner', 'Customer Portal', 'Invoicing', 'Appointments', 'LBC Wallet Ready'].map(f => (
                 <span key={f} className="px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-300 text-xs font-medium">{f}</span>
               ))}
             </div>
@@ -318,9 +321,11 @@ export default function Services() {
           {/* Price badge */}
           <div className="relative flex-shrink-0 text-center">
             <div className="rounded-2xl bg-teal-500/10 border border-teal-500/20 p-5">
-              <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">Starting at</p>
-              <p className="text-3xl font-bold text-teal-400">$199<span className="text-base font-normal text-zinc-400">/mo</span></p>
-              <p className="text-xs text-zinc-500 mt-1">+ $2,999 setup</p>
+              <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">LBC Auto</p>
+              <p className="text-3xl font-bold text-teal-400">$199<span className="text-base font-normal text-zinc-400">/mo Basic</span></p>
+              <p className="text-sm font-semibold text-teal-300 mt-1">$299/mo Pro</p>
+              <p className="text-xs text-zinc-500 mt-2">$2,999 setup includes 4 days training</p>
+              <p className="text-xs text-zinc-500 mt-1">Additional training: $300/day</p>
             </div>
           </div>
         </motion.div>

@@ -246,6 +246,49 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Official Ecosystem Authority Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative overflow-hidden rounded-3xl border border-indigo-500/20 bg-white/[0.03] p-8 md:p-12 glow"
+          >
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/15 via-purple-600/10 to-pink-600/10" />
+            <div className="absolute -top-24 -right-20 h-64 w-64 rounded-full bg-indigo-500/20 blur-3xl" />
+            <div className="relative z-10 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+              <div>
+                <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-indigo-300">Official Ecosystem</p>
+                <h2 className="text-3xl md:text-5xl font-bold mb-5">The Official Platform of LBC Network Inc.</h2>
+                <div className="space-y-4 text-zinc-300 leading-relaxed text-base md:text-lg">
+                  <p>
+                    LBC Hub is the official digital ecosystem platform of LBC Network Inc., founded by Mokhtar Tarek Samara in Ottawa, Canada.
+                  </p>
+                  <p>
+                    Through one connected access point, LBC Hub brings together social, marketplace, services, travel, rides, LBC Auto, Lumina AI, and future LBC Wallet payments.
+                  </p>
+                  <p className="font-semibold text-white">
+                    Official access point: <a href="https://LBC-HUB.COM" className="text-indigo-300 hover:text-indigo-200">https://LBC-HUB.COM</a>
+                  </p>
+                </div>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-zinc-950/60 p-5">
+                <p className="mb-4 text-sm text-zinc-400">Connected platform layers</p>
+                <div className="flex flex-wrap gap-3">
+                  {['LBC Auto', 'Lumina AI', 'LBC Wallet', 'Services', 'Marketplace', 'Travel', 'Rides'].map(layer => (
+                    <span key={layer} className="rounded-full border border-indigo-400/20 bg-indigo-500/10 px-4 py-2 text-sm font-medium text-indigo-200">
+                      {layer}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 px-4">
         <div className="max-w-4xl mx-auto">

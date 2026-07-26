@@ -272,17 +272,25 @@ export default function Layout({ children, currentPageName }) {
       {/* Footer */}
       <footer className="border-t border-white/5 py-12 mt-20 bg-zinc-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 rounded-2xl border border-indigo-500/20 bg-white/[0.03] p-5 text-center">
+            <p className="text-sm text-zinc-300">
+              Part of the <span className="font-semibold text-white">LBC Network Inc.</span> ecosystem. Official platform: <a href="https://LBC-HUB.COM" className="text-indigo-300 hover:text-indigo-200 font-semibold">https://LBC-HUB.COM</a>
+            </p>
+            <p className="mt-2 text-xs text-zinc-500">
+              LBC Hub connects LBC Auto, Lumina AI, LBC Wallet, Services, Marketplace, Travel, Rides, and Social tools from Ottawa, Canada.
+            </p>
+          </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-sm">
                 LBC
               </div>
-              <span className="text-zinc-400 text-sm">© 2026 LBC Hub. All rights reserved.</span>
+              <span className="text-zinc-400 text-sm">© 2026 LBC Hub by LBC Network Inc. All rights reserved.</span>
             </div>
             <div className="flex items-center gap-6 text-sm text-zinc-500">
               <Link to={createPageUrl('Privacy')} className="hover:text-white transition-colors">Privacy</Link>
               <Link to={createPageUrl('Terms')} className="hover:text-white transition-colors">Terms</Link>
-              <a href="mailto:lbchubteam@gmail.com?subject=LBC%20Hub%20Support" className="hover:text-white transition-colors">Support</a>
+              <a href="mailto:Tarek-Samara@LBC-HUB.COM?subject=LBC%20Hub%20Support" className="hover:text-white transition-colors">Support</a>
             </div>
           </div>
         </div>
